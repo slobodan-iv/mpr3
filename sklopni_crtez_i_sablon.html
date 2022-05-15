@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Tangerine|Caveat" rel="stylesheet">
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Моделирање кућишта!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Pictures/logo3.png" width="90" height="60" class="d-inline-block align-top rounded" alt="M3Design"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Моделирање вентила</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weldment.html">Моделирање цеви</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kuciste.html">Моделирање кућишта</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Склопни цртеж и израда шаблона</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Повезани Web site-ови
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/mpr1/">Моделирање помоћу рачунара 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/mpr2/">Моделирање помоћу рачунара 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Моделирање и симулација пом. рач.</a>
+                </li>
+                </li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_izborni/">Моделирање и симулација пом. рач. - изб. пр.</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/konstruisanje/">Конструисање</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- navbar -->
+    <!-- container -->
+    <div class="container">
+      <!-- Content here -->
+      <div>
+        <h1>Склопни цртеж и израда шаблона</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-11 col-lg-10">
+            <div class="accordion" id="izrada_sklopnih_crteza_i_sablona">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="crtez_reduktora">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_crtezi_reduktora" aria-expanded="true" aria-controls="collapse_crtezi_reduktora">
+                    Цртежи редуктора:
+                  </button>
+                </h2>
+                <div id="collapse_crtezi_reduktora" class="accordion-collapse collapse show" aria-labelledby="crtez_reduktora" data-bs-parent="#izrada_sklopnih_crteza_i_sablona">
+                  <div class="accordion-body">
+                    <ul class="nav nav-tabs" id="kuciste_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="rastavljen_sklop_crtez-tab" data-bs-toggle="tab" data-bs-target="#rastavljen_sklop_crtez" type="button" role="tab" aria-controls="rastavljen_sklop_crtez" aria-selected="true">Цртеж растављеног склопа</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Exploded_view_crtez-tab" data-bs-toggle="tab" data-bs-target="#Exploded_view_crtez" type="button" role="tab" aria-controls="Exploded_view_crtez" aria-selected="true" aria-disabled="true">Exploded View</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Exploded_Line_Sketch_crtez-tab" data-bs-toggle="tab" data-bs-target="#Exploded_Line_Sketch_crtez" type="button" role="tab" aria-controls="Exploded_Line_Sketch_crtez" aria-selected="true" aria-disabled="true">Explode Line Sketch</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reduktor_crtezi-tab" data-bs-toggle="tab" data-bs-target="#reduktor_crtezi" type="button" role="tab" aria-controls="reduktor_crtezi" aria-selected="true" aria-disabled="true">Склопни цртежи редуктора</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="kuciste_TabContent">
+                      <div class="tab-pane show active" id="rastavljen_sklop_crtez" role="tabpanel" aria-labelledby="rastavljen_sklop_crtez-tab">
+                        <img src="Pictures/Crtezi/Jednostepeni_reduktor_cil_zup.jpg" width="100%" alt="Цртеж растављеног склопа">
+                      </div>
+                      <div class="tab-pane" id="Exploded_view_crtez" role="tabpanel" aria-labelledby="Exploded_view_crtez-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/aZvEEC2SGbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="Exploded_Line_Sketch_crtez" role="tabpanel" aria-labelledby="Exploded_Line_Sketch_crtez-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/u4HGk4dNiE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="reduktor_crtezi" role="tabpanel" aria-labelledby="reduktor_crtezi-tab">
+                        <div id="carousel_crtezi_reduktora" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_crtezi_reduktora" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_crtezi_reduktora" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Pictures/Carousel/Jednostepeni_reduktor_cil_zup_1.jpg" class="d-block w-100" alt="Склопни цртеж са потписаним моделом">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Carousel/Jednostepeni_reduktor_cil_zup_2.jpg" class="d-block w-100" alt="Склопни цртеж">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_crtezi_reduktora" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_crtezi_reduktora" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="template">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_template" aria-expanded="true" aria-controls="collapse_template">
+                    "Template" - израда шаблона:
+                  </button>
+                </h2>
+                <div id="collapse_template" class="accordion-collapse collapse" aria-labelledby="template" data-bs-parent="#izrada_sklopnih_crteza_i_sablona">
+                  <div class="accordion-body">
+                    <ul class="nav nav-tabs" id="template_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Part_template-tab" data-bs-toggle="tab" data-bs-target="#Part_template" type="button" role="tab" aria-controls="Part_template" aria-selected="true">Part Template</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Assembly_template-tab" data-bs-toggle="tab" data-bs-target="#Assembly_template" type="button" role="tab" aria-controls="Assembly_template" aria-selected="false">Assembly Template</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Drawing_template-tab" data-bs-toggle="tab" data-bs-target="#Drawing_template" type="button" role="tab" aria-controls="Drawing_template" aria-selected="false">Drawing template</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Trailing_zeroes_remove-tab" data-bs-toggle="tab" data-bs-target="#Trailing_zeroes_remove" type="button" role="tab" aria-controls="Trailing_zeroes_remove" aria-selected="false">Trailing zeroes remove</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="template_TabContent">
+                      <div class="tab-pane show active" id="Part_template" role="tabpanel" aria-labelledby="Part_template-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/6At5F_YwpqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="Assembly_template" role="tabpanel" aria-labelledby="Assembly_template-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/2MgxdmaBA1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="Drawing_template" role="tabpanel" aria-labelledby="Drawing_template-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/TYeaDKXomzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="Trailing_zeroes_remove" role="tabpanel" aria-labelledby="Trailing_zeroes_remove-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/TYeaDKXomzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <nav class="card-header" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">&copy; Slobodan Ivković</li>
+                  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/slobodan-ivkovic-a08326ba"><img src="Pictures/Icons/linkedin.png" alt="linkedin logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://twitter.com/slobodan_iv"><img src="Pictures/Icons/twitter.png" alt="twitter logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://www.youtube.com/user/Mickijedini"><img src="Pictures/Icons/youtube.png" alt="youtube logo"></a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
